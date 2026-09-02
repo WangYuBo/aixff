@@ -24,8 +24,16 @@
   function langFromStorage() {
     try {
       var v = localStorage.getItem(STORE_KEY);
-      return v === "en" ? "en" : "zh";
-    } catch (e) { return "zh"; }
+      return v === "en" || v === "zh" ? v : null;
+    } catch (e) { return null; }
+  }
+
+  /* 首次访问且未存偏好时，按浏览器语言自动切换（服务“国际影展”定位） */
+  function initialLang() {
+    var stored = langFromStorage();
+    if (stored) return stored;
+    var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+    return nav.indexOf("en") === 0 ? "en" : "zh";
   }
 
   if (toggle) {
@@ -33,7 +41,7 @@
       applyLang(document.documentElement.lang === "en" ? "zh" : "en");
     });
   }
-  applyLang(langFromStorage());
+  applyLang(initialLang());
 
   /* ---------- Mobile navigation ---------- */
   var burger = document.getElementById("navBurger");

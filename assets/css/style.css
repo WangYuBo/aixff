@@ -9,7 +9,7 @@
   --bg-2: #15151D;
   --bg-3: #1C1C27;
   --paper: #F5F1E8;
-  --muted: #A6A2B0;
+  --muted: #B2AEBC;
   --red: #B03A2E;
   --red-hi: #C75B4B;
   --gold: #C9A96A;
@@ -239,6 +239,10 @@ body.nav-open .nav-burger span:last-child { transform: translateY(-3.5px) rotate
 .btn-red:hover { background: var(--red-hi); }
 .btn-ghost { border-color: var(--line-strong); color: var(--paper); }
 .btn-ghost:hover { border-color: var(--red-hi); color: var(--red-hi); }
+.btn-gold { background: var(--gold); color: #191206; }
+.btn-gold:hover { background: color-mix(in srgb, var(--gold) 86%, #fff); }
+.reg-cta { margin: 20px 0 0; }
+.reg-cta .btn { width: 100%; text-align: center; }
 
 /* ---------- Film strip ---------- */
 .filmstrip {
@@ -427,7 +431,7 @@ body.nav-open .nav-burger span:last-child { transform: translateY(-3.5px) rotate
   padding: 7px 0 7px 14px;
   border-left: 2px solid var(--line-strong);
   color: color-mix(in srgb, var(--paper) 88%, var(--bg));
-  font-size: 0.95rem;
+  font-size: 0.98rem;
 }
 .award-list li:hover { border-left-color: var(--red-hi); }
 .awards-note { margin: 22px 0 0; color: var(--muted); font-size: 0.9rem; }
@@ -474,7 +478,7 @@ body.nav-open .nav-burger span:last-child { transform: translateY(-3.5px) rotate
   padding: 8px 0 8px 14px;
   border-left: 2px solid var(--line-strong);
   color: color-mix(in srgb, var(--paper) 88%, var(--bg));
-  font-size: 0.94rem;
+  font-size: 0.98rem;
 }
 
 /* ---------- Conference ---------- */
@@ -525,6 +529,18 @@ body.nav-open .nav-burger span:last-child { transform: translateY(-3.5px) rotate
   font-size: 0.94rem;
   max-width: 66ch;
 }
+.conference-cta { margin-top: 24px; }
+.conference-cta .btn { padding-left: 26px; padding-right: 26px; }
+.submit-channel {
+  margin: 30px 0 0;
+  padding: 16px 18px;
+  border-left: 3px solid var(--red);
+  background: var(--bg-2);
+  border-radius: 0 10px 10px 0;
+  color: color-mix(in srgb, var(--paper) 86%, var(--bg));
+  max-width: 66ch;
+}
+.submit-channel a { color: var(--red-hi); }
 
 /* ---------- Exhibition ---------- */
 .expo-cats { grid-template-columns: 1fr 1fr; }
@@ -566,6 +582,8 @@ body.nav-open .nav-burger span:last-child { transform: translateY(-3.5px) rotate
 .contact-list > div { display: grid; grid-template-columns: 150px 1fr; gap: 18px; padding: 13px 0; border-bottom: 1px solid var(--line); }
 .contact-list dt { font-family: var(--serif); font-weight: 700; color: var(--gold); }
 .contact-list dd { margin: 0; color: var(--paper); font-size: 0.98rem; }
+.contact-list dd a { color: var(--paper); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, var(--paper) 32%, transparent); }
+.contact-list dd a:hover { color: var(--red-hi); }
 .register-note { border: 1px solid var(--line); border-radius: 14px; padding: 26px; background: var(--bg-2); }
 .register-note p { color: var(--muted); margin: 0 0 14px; }
 .register-note p:last-child { margin-bottom: 0; }
