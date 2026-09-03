@@ -67,7 +67,7 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-title-zh="会议征稿 AIVTA 2026 · 2026 AI国际影展" data-title-en="Call for Papers AIVTA 2026 · 2026 AI International Film Festival">
+<body data-page="conference" data-title-zh="会议征稿 AIVTA 2026 · 2026 AI国际影展" data-title-en="Call for Papers AIVTA 2026 · 2026 AI International Film Festival">
 
 <!-- ============ 顶部导航 ============ -->
 <header class="nav" id="nav">
@@ -78,15 +78,10 @@
       <span class="brand-year">2026</span>
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="index.html#about" class="zh">关于</a><a href="index.html#about" class="en" hidden>About</a>
-      <a href="index.html#schedule" class="zh">日程</a><a href="index.html#schedule" class="en" hidden>Schedule</a>
-      <a href="index.html#org" class="zh">组织</a><a href="index.html#org" class="en" hidden>Organizers</a>
-      <a href="submit.html#awards" class="zh">奖项</a><a href="submit.html#awards" class="en" hidden>Awards</a>
-      <a href="submit.html" class="zh">参赛</a><a href="submit.html" class="en" hidden>Submit</a>
-      <a href="#conference" class="zh active">会议</a><a href="#conference" class="en active" hidden>Conference</a>
-      <a href="expo.html" class="zh">参展</a><a href="expo.html" class="en" hidden>Exhibit</a>
-      <a href="expo.html#fees" class="zh">费用</a><a href="expo.html#fees" class="en" hidden>Fees</a>
-      <a href="index.html#contact" class="zh">联系</a><a href="index.html#contact" class="en" hidden>Contact</a>
+      <a href="index.html" class="zh">首页</a><a href="index.html" class="en" hidden>Festival</a>
+      <a href="submit.html" class="zh">作品竞赛</a><a href="submit.html" class="en" hidden>Competition</a>
+      <a href="#conference" class="zh active" aria-current="page">学术会议</a><a href="#conference" class="en active" hidden aria-current="page">Conference</a>
+      <a href="expo.html" class="zh">产业展览</a><a href="expo.html" class="en" hidden>Exhibition</a>
     </nav>
     <div class="nav-actions">
       <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
@@ -102,8 +97,15 @@
 <!-- ============ 页头 ============ -->
 <section class="section" id="conference">
   <div class="wrap">
+    <p class="page-kicker"><span class="zh">参与路径 02 / 03</span><span class="en" hidden>Path 02 / 03</span></p>
     <h1 class="sec-title"><span class="zh">会议征稿</span><span class="en" hidden>Call for Papers</span></h1>
     <p class="sub-title"><span class="zh">首届AI视频技术及应用国际会议 AIVTA 2026 · 文技共生 · 影创未来</span><span class="en" hidden>The 1st Int'l Conference on AI Video Technology &amp; Applications · Culture &amp; Technology Symbiosis</span></p>
+    <nav class="section-nav" aria-label="Page navigation">
+      <a href="#cfp"><span class="zh">会议简介</span><span class="en" hidden>Overview</span></a>
+      <a href="#tracks"><span class="zh">征稿方向</span><span class="en" hidden>Tracks</span></a>
+      <a href="#paper-submit"><span class="zh">投稿要求</span><span class="en" hidden>Submission</span></a>
+      <a href="#deadlines"><span class="zh">关键日期</span><span class="en" hidden>Dates</span></a>
+    </nav>
   </div>
 </section>
 
@@ -120,7 +122,7 @@
 
     <div class="two-col">
       <div>
-        <h3 class="sub-title"><span class="zh">八大征稿方向</span><span class="en" hidden>Eight Tracks</span></h3>
+        <h3 class="sub-title" id="tracks"><span class="zh">八大征稿方向</span><span class="en" hidden>Eight Tracks</span></h3>
         <ol class="tracks">
           <li><span class="zh">生成式AI与影视文学创意内容生产</span><span class="en" hidden>Generative AI &amp; creative content production for film &amp; literature</span></li>
           <li><span class="zh">智能拍摄与虚拟制片技术</span><span class="en" hidden>Intelligent filming &amp; virtual production</span></li>
@@ -133,7 +135,7 @@
         </ol>
       </div>
       <div>
-        <h3 class="sub-title"><span class="zh">投稿要求</span><span class="en" hidden>Submission</span></h3>
+        <h3 class="sub-title" id="paper-submit"><span class="zh">投稿要求</span><span class="en" hidden>Submission</span></h3>
         <ul class="req-list">
           <li><span class="zh">全文6000–8000字，IEEE Conference Template双栏排版</span><span class="en" hidden>6,000–8,000 words, IEEE Conference Template, two-column</span></li>
           <li><span class="zh">须含中英文标题、摘要及关键词；正文建议英文撰写</span><span class="en" hidden>CN/EN title, abstract &amp; keywords; body recommended in English</span></li>
@@ -141,7 +143,7 @@
           <li><span class="zh">投稿邮箱：<a href="mailto:adv@aivta.org">adv@aivta.org</a></span><span class="en" hidden>Submit to: <a href="mailto:adv@aivta.org">adv@aivta.org</a></span></li>
           <li><span class="zh">邮件主题：AIVTA 2026 Submission - [Paper Title] - [Author Name]</span><span class="en" hidden>Subject: AIVTA 2026 Submission - [Paper Title] - [Author Name]</span></li>
         </ul>
-        <h3 class="sub-title sub-title-gap"><span class="zh">关键时间节点</span><span class="en" hidden>Key Dates</span></h3>
+        <h3 class="sub-title sub-title-gap" id="deadlines"><span class="zh">关键时间节点</span><span class="en" hidden>Key Dates</span></h3>
         <ul class="deadlines">
           <li><span class="zh">论文投稿截止</span><span class="en" hidden>Paper submission</span> <b><span class="zh">2026年9月30日</span><span class="en" hidden>Sep 30, 2026</span></b></li>
           <li><span class="zh">录用通知发出</span><span class="en" hidden>Acceptance notice</span> <b><span class="zh">2026年10月15日</span><span class="en" hidden>Oct 15, 2026</span></b></li>
@@ -161,11 +163,16 @@
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p class="footer-brand"><span class="zh">2026 AI国际影展 · 智绘未来，影动无界</span><span class="en" hidden>2026 AI International Film Festival · AI Changes Cinema, Youth Creates the Future</span></p>
-    <p class="footer-meta">
-      <span class="zh">合肥滨湖国际会展中心 · 2026.11.12—11.15</span>
-      <span class="en" hidden>Hefei Binhu Int'l Convention &amp; Exhibition Center · Nov 12–15, 2026</span>
-    </p>
+    <div class="footer-grid">
+      <div><p class="footer-label"><span class="zh">参与</span><span class="en" hidden>Take part</span></p><a href="submit.html"><span class="zh">作品竞赛</span><span class="en" hidden>Competition</span></a><a href="conference.html"><span class="zh">学术会议</span><span class="en" hidden>Conference</span></a><a href="expo.html"><span class="zh">产业展览</span><span class="en" hidden>Exhibition</span></a></div>
+      <div><p class="footer-label"><span class="zh">组委会</span><span class="en" hidden>Committee</span></p><a href="mailto:wcwpc@foxmail.com">wcwpc@foxmail.com</a><a href="tel:+861061675616">+86 10 6167 5616</a><a href="tel:+8613910272918"><span class="zh">微信 / 电话 139 1027 2918</span><span class="en" hidden>WeChat / Tel 139 1027 2918</span></a></div>
+      <div><p class="footer-label"><span class="zh">论文咨询</span><span class="en" hidden>Paper enquiries</span></p><a href="mailto:adv@aivta.org">adv@aivta.org</a><a href="tel:+8615101087525">+86 151 0108 7525</a><a href="https://www.aivta.org" rel="noopener" target="_blank">aivta.org ↗</a></div>
+      <div><p class="footer-label"><span class="zh">时间地点</span><span class="en" hidden>When &amp; where</span></p><span><span class="zh">2026.11.12—11.15</span><span class="en" hidden>Nov 12–15, 2026</span></span><span><span class="zh">合肥滨湖国际会展中心</span><span class="en" hidden>Hefei Binhu Int'l Convention &amp; Exhibition Center</span></span></div>
+    </div>
+    <details class="footer-more">
+      <summary><span class="zh">查看其他地区联络电话</span><span class="en" hidden>More regional contacts</span></summary>
+      <div class="footer-phones"><span><b><span class="zh">中国内地</span><span class="en" hidden>Mainland China</span></b> <a href="tel:+8613501006041">135 0100 6041</a> · <a href="tel:+8616710057519">167 1005 7519</a></span><span><b><span class="zh">中国香港</span><span class="en" hidden>Hong Kong</span></b> <a href="tel:+85257016042">+852 5701 6042</a></span><span><b><span class="zh">加拿大</span><span class="en" hidden>Canada</span></b> <a href="tel:+16043685548">+1 604 368 5548</a> · <a href="tel:+16046356035">604 635 6035</a> · <a href="tel:+16048025370">604 802 5370</a></span><span><b><span class="zh">美国</span><span class="en" hidden>USA</span></b> <a href="tel:+16462912938">+1 646 291 2938</a></span></div>
+    </details>
     <p class="footer-copy">© 2026 AI International Film Festival · <a href="https://aixff.org">www.aixff.org</a></p>
   </div>
 </footer>

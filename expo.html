@@ -56,7 +56,7 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-title-zh="展位申请 · 2026 AI国际影展" data-title-en="Booth Enquiry · 2026 AI International Film Festival">
+<body data-page="exhibition" data-title-zh="展位申请 · 2026 AI国际影展" data-title-en="Booth Enquiry · 2026 AI International Film Festival">
 
 <!-- ============ 顶部导航 ============ -->
 <header class="nav" id="nav">
@@ -67,15 +67,10 @@
       <span class="brand-year">2026</span>
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="index.html#about" class="zh">关于</a><a href="index.html#about" class="en" hidden>About</a>
-      <a href="index.html#schedule" class="zh">日程</a><a href="index.html#schedule" class="en" hidden>Schedule</a>
-      <a href="index.html#org" class="zh">组织</a><a href="index.html#org" class="en" hidden>Organizers</a>
-      <a href="submit.html#awards" class="zh">奖项</a><a href="submit.html#awards" class="en" hidden>Awards</a>
-      <a href="submit.html" class="zh">参赛</a><a href="submit.html" class="en" hidden>Submit</a>
-      <a href="conference.html" class="zh">会议</a><a href="conference.html" class="en" hidden>Conference</a>
-      <a href="#expo" class="zh active">参展</a><a href="#expo" class="en active" hidden>Exhibit</a>
-      <a href="#fees" class="zh">费用</a><a href="#fees" class="en" hidden>Fees</a>
-      <a href="index.html#contact" class="zh">联系</a><a href="index.html#contact" class="en" hidden>Contact</a>
+      <a href="index.html" class="zh">首页</a><a href="index.html" class="en" hidden>Festival</a>
+      <a href="submit.html" class="zh">作品竞赛</a><a href="submit.html" class="en" hidden>Competition</a>
+      <a href="conference.html" class="zh">学术会议</a><a href="conference.html" class="en" hidden>Conference</a>
+      <a href="#expo" class="zh active" aria-current="page">产业展览</a><a href="#expo" class="en active" hidden aria-current="page">Exhibition</a>
     </nav>
     <div class="nav-actions">
       <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
@@ -91,8 +86,14 @@
 <!-- ============ 页头 ============ -->
 <section class="section" id="expo">
   <div class="wrap">
+    <p class="page-kicker"><span class="zh">参与路径 03 / 03</span><span class="en" hidden>Path 03 / 03</span></p>
     <h1 class="sec-title"><span class="zh">展位申请</span><span class="en" hidden>Booth Enquiry</span></h1>
     <p class="sub-title"><span class="zh">展览招展 10 类 · 同期举办 2026 国际文旅博览会（文旅无界 · 商机无限）</span><span class="en" hidden>10 exhibition categories · alongside the 2026 International Culture &amp; Tourism Expo</span></p>
+    <nav class="section-nav" aria-label="Page navigation">
+      <a href="#booth"><span class="zh">招展与展位</span><span class="en" hidden>Booths</span></a>
+      <a href="#fees"><span class="zh">参会费用</span><span class="en" hidden>Attendance Fees</span></a>
+      <a href="#payment"><span class="zh">收款方式</span><span class="en" hidden>Payment</span></a>
+    </nav>
   </div>
 </section>
 
@@ -147,7 +148,7 @@
       </div>
     </div>
 
-    <div class="accounts">
+    <div class="accounts" id="payment">
       <h3 class="sub-title"><span class="zh">收款账户</span><span class="en" hidden>Payment Accounts</span></h3>
       <dl class="org-list">
         <div><dt><span class="zh">对公</span><span class="en" hidden>Corporate</span></dt><dd><span class="zh">北京科发影视传媒有限公司 · 中国建设银行北京首体南路支行 · 账号 11050170500000000473</span><span class="en" hidden>Beijing Kefa Film &amp; TV Media Co., Ltd. · China Construction Bank, Beijing Shouti South Road Sub-branch · Acct 11050170500000000473</span></dd></div>
@@ -162,11 +163,16 @@
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p class="footer-brand"><span class="zh">2026 AI国际影展 · 智绘未来，影动无界</span><span class="en" hidden>2026 AI International Film Festival · AI Changes Cinema, Youth Creates the Future</span></p>
-    <p class="footer-meta">
-      <span class="zh">合肥滨湖国际会展中心 · 2026.11.12—11.15</span>
-      <span class="en" hidden>Hefei Binhu Int'l Convention &amp; Exhibition Center · Nov 12–15, 2026</span>
-    </p>
+    <div class="footer-grid">
+      <div><p class="footer-label"><span class="zh">参与</span><span class="en" hidden>Take part</span></p><a href="submit.html"><span class="zh">作品竞赛</span><span class="en" hidden>Competition</span></a><a href="conference.html"><span class="zh">学术会议</span><span class="en" hidden>Conference</span></a><a href="expo.html"><span class="zh">产业展览</span><span class="en" hidden>Exhibition</span></a></div>
+      <div><p class="footer-label"><span class="zh">组委会</span><span class="en" hidden>Committee</span></p><a href="mailto:wcwpc@foxmail.com">wcwpc@foxmail.com</a><a href="tel:+861061675616">+86 10 6167 5616</a><a href="tel:+8613910272918"><span class="zh">微信 / 电话 139 1027 2918</span><span class="en" hidden>WeChat / Tel 139 1027 2918</span></a></div>
+      <div><p class="footer-label"><span class="zh">论文咨询</span><span class="en" hidden>Paper enquiries</span></p><a href="mailto:adv@aivta.org">adv@aivta.org</a><a href="tel:+8615101087525">+86 151 0108 7525</a><a href="https://www.aivta.org" rel="noopener" target="_blank">aivta.org ↗</a></div>
+      <div><p class="footer-label"><span class="zh">时间地点</span><span class="en" hidden>When &amp; where</span></p><span><span class="zh">2026.11.12—11.15</span><span class="en" hidden>Nov 12–15, 2026</span></span><span><span class="zh">合肥滨湖国际会展中心</span><span class="en" hidden>Hefei Binhu Int'l Convention &amp; Exhibition Center</span></span></div>
+    </div>
+    <details class="footer-more">
+      <summary><span class="zh">查看其他地区联络电话</span><span class="en" hidden>More regional contacts</span></summary>
+      <div class="footer-phones"><span><b><span class="zh">中国内地</span><span class="en" hidden>Mainland China</span></b> <a href="tel:+8613501006041">135 0100 6041</a> · <a href="tel:+8616710057519">167 1005 7519</a></span><span><b><span class="zh">中国香港</span><span class="en" hidden>Hong Kong</span></b> <a href="tel:+85257016042">+852 5701 6042</a></span><span><b><span class="zh">加拿大</span><span class="en" hidden>Canada</span></b> <a href="tel:+16043685548">+1 604 368 5548</a> · <a href="tel:+16046356035">604 635 6035</a> · <a href="tel:+16048025370">604 802 5370</a></span><span><b><span class="zh">美国</span><span class="en" hidden>USA</span></b> <a href="tel:+16462912938">+1 646 291 2938</a></span></div>
+    </details>
     <p class="footer-copy">© 2026 AI International Film Festival · <a href="https://aixff.org">www.aixff.org</a></p>
   </div>
 </footer>

@@ -74,7 +74,7 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-title-zh="2026 AI国际影展 · AI International Film Festival" data-title-en="2026 AI International Film Festival">
+<body data-page="home" data-title-zh="2026 AI国际影展 · AI International Film Festival" data-title-en="2026 AI International Film Festival">
 
 <!-- ============ 顶部导航 ============ -->
 <header class="nav" id="nav">
@@ -85,15 +85,10 @@
       <span class="brand-year">2026</span>
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#about" class="zh">关于</a><a href="#about" class="en" hidden>About</a>
-      <a href="#schedule" class="zh">日程</a><a href="#schedule" class="en" hidden>Schedule</a>
-      <a href="#org" class="zh">组织</a><a href="#org" class="en" hidden>Organizers</a>
-      <a href="submit.html#awards" class="zh">奖项</a><a href="submit.html#awards" class="en" hidden>Awards</a>
-      <a href="submit.html" class="zh">参赛</a><a href="submit.html" class="en" hidden>Submit</a>
-      <a href="conference.html" class="zh">会议</a><a href="conference.html" class="en" hidden>Conference</a>
-      <a href="expo.html" class="zh">参展</a><a href="expo.html" class="en" hidden>Exhibit</a>
-      <a href="expo.html#fees" class="zh">费用</a><a href="expo.html#fees" class="en" hidden>Fees</a>
-      <a href="#contact" class="zh">联系</a><a href="#contact" class="en" hidden>Contact</a>
+      <a href="#hero" class="zh active" aria-current="page">首页</a><a href="#hero" class="en active" hidden aria-current="page">Festival</a>
+      <a href="submit.html" class="zh">作品竞赛</a><a href="submit.html" class="en" hidden>Competition</a>
+      <a href="conference.html" class="zh">学术会议</a><a href="conference.html" class="en" hidden>Conference</a>
+      <a href="expo.html" class="zh">产业展览</a><a href="expo.html" class="en" hidden>Exhibition</a>
     </nav>
     <div class="nav-actions">
       <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
@@ -134,9 +129,8 @@
     </p>
 
     <div class="hero-cta">
-      <a class="btn btn-red" href="submit.html"><span class="zh">报名参赛</span><span class="en" hidden>Enter the Festival</span></a>
-      <a class="btn btn-ghost" href="conference.html"><span class="zh">会议征稿</span><span class="en" hidden>Call for Papers</span></a>
-      <a class="btn btn-ghost" href="expo.html"><span class="zh">展位申请</span><span class="en" hidden>Booth Enquiry</span></a>
+      <a class="btn btn-red" href="#participate"><span class="zh">选择参与方式</span><span class="en" hidden>Choose How to Join</span></a>
+      <a class="btn btn-ghost" href="#schedule"><span class="zh">查看日程</span><span class="en" hidden>View Schedule</span></a>
     </div>
   </div>
 
@@ -156,7 +150,40 @@
   </div>
 </section>
 
-<!-- ============ 2 · About ============ -->
+<!-- ============ 2 · Participation pathways ============ -->
+<section class="section pathways" id="participate">
+  <div class="wrap">
+    <p class="section-kicker"><span class="zh">三个入口 · 一次盛会</span><span class="en" hidden>Three paths · One festival</span></p>
+    <h2 class="sec-title"><span class="zh">你希望如何参与？</span><span class="en" hidden>How will you take part?</span></h2>
+    <p class="section-intro"><span class="zh">先选择你的身份，再查看与这件事真正相关的信息。</span><span class="en" hidden>Choose your role first, then see only the information that matters to you.</span></p>
+
+    <div class="pathway-grid">
+      <a class="pathway-card" href="submit.html">
+        <span class="pathway-no" aria-hidden="true">01</span>
+        <span class="pathway-role"><span class="zh">创作者与团队</span><span class="en" hidden>Creators &amp; Teams</span></span>
+        <strong><span class="zh">提交 AI 影像作品</span><span class="en" hidden>Submit an AI film</span></strong>
+        <span class="pathway-copy"><span class="zh">查看 58 项作品荣誉、参赛类别与技术要求。</span><span class="en" hidden>Explore 58 honors, categories and technical requirements.</span></span>
+        <span class="pathway-link"><span class="zh">进入作品竞赛</span><span class="en" hidden>Explore competition</span> <i aria-hidden="true">↗</i></span>
+      </a>
+      <a class="pathway-card" href="conference.html">
+        <span class="pathway-no" aria-hidden="true">02</span>
+        <span class="pathway-role"><span class="zh">研究者与技术团队</span><span class="en" hidden>Researchers &amp; Technologists</span></span>
+        <strong><span class="zh">投稿 AIVTA 2026</span><span class="en" hidden>Submit to AIVTA 2026</span></strong>
+        <span class="pathway-copy"><span class="zh">查看八大征稿方向、论文要求与关键日期。</span><span class="en" hidden>Review eight tracks, paper requirements and key dates.</span></span>
+        <span class="pathway-link"><span class="zh">进入学术会议</span><span class="en" hidden>Explore conference</span> <i aria-hidden="true">↗</i></span>
+      </a>
+      <a class="pathway-card" href="expo.html">
+        <span class="pathway-no" aria-hidden="true">03</span>
+        <span class="pathway-role"><span class="zh">品牌与产业伙伴</span><span class="en" hidden>Brands &amp; Industry</span></span>
+        <strong><span class="zh">参展或参加大会</span><span class="en" hidden>Exhibit or attend</span></strong>
+        <span class="pathway-copy"><span class="zh">查看招展范围、展位规格与参会费用。</span><span class="en" hidden>See exhibition categories, booth options and attendance fees.</span></span>
+        <span class="pathway-link"><span class="zh">进入产业展览</span><span class="en" hidden>Explore exhibition</span> <i aria-hidden="true">↗</i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 · About ============ -->
 <section class="section" id="about">
   <div class="wrap">
     <h2 class="sec-title"><span class="zh">关于影展</span><span class="en" hidden>About the Festival</span></h2>
@@ -192,7 +219,7 @@
   </div>
 </section>
 
-<!-- ============ 3 · Schedule ============ -->
+<!-- ============ 4 · Schedule ============ -->
 <section class="section section-alt" id="schedule">
   <div class="wrap">
     <h2 class="sec-title"><span class="zh">日程安排</span><span class="en" hidden>Schedule</span></h2>
@@ -225,7 +252,7 @@
   </div>
 </section>
 
-<!-- ============ 4 · Organizations & Jury ============ -->
+<!-- ============ 5 · Organizations & Jury ============ -->
 <section class="section" id="org">
   <div class="wrap">
     <h2 class="sec-title"><span class="zh">组织机构与主席团</span><span class="en" hidden>Organizers &amp; Leadership</span></h2>
@@ -258,10 +285,10 @@
   </div>
 </section>
 
-<!-- ============ 5 · Extras ============ -->
+<!-- ============ 6 · Visit ============ -->
 <section class="section section-alt" id="extras">
   <div class="wrap">
-    <h2 class="sec-title"><span class="zh">会后与周边</span><span class="en" hidden>After the Festival</span></h2>
+    <h2 class="sec-title"><span class="zh">到访合肥</span><span class="en" hidden>Plan Your Visit</span></h2>
 
     <div class="extras-grid">
       <div class="extra-card">
@@ -283,48 +310,44 @@
   </div>
 </section>
 
-<!-- ============ 6 · Contact ============ -->
-<section class="section" id="contact">
-  <div class="wrap">
-    <h2 class="sec-title"><span class="zh">联系方式</span><span class="en" hidden>Contact</span></h2>
-
-    <div class="contact-grid">
-      <div>
-        <h3 class="sub-title"><span class="zh">大会组委会</span><span class="en" hidden>Organizing Committee</span></h3>
-        <dl class="contact-list">
-          <div><dt><span class="zh">中国内地</span><span class="en" hidden>Mainland China</span></dt><dd><a href="tel:+861061675616">+86-10-61675616</a> · <a href="tel:+8613910272918">13910272918</a>（微信）· <a href="tel:+8613501006041">13501006041</a> · <a href="tel:+8616710057519">16710057519</a></dd></div>
-          <div><dt><span class="zh">中国香港</span><span class="en" hidden>Hong Kong</span></dt><dd><a href="tel:+85257016042">+852-57016042</a></dd></div>
-          <div><dt><span class="zh">加拿大</span><span class="en" hidden>Canada</span></dt><dd><a href="tel:+16043685548">+1-604-368-5548</a> · <a href="tel:+16046356035">604-635-6035</a> · <a href="tel:+16048025370">604-802-5370</a></dd></div>
-          <div><dt><span class="zh">美国</span><span class="en" hidden>USA</span></dt><dd><a href="tel:+16462912938">+1-646-291-2938</a></dd></div>
-        </dl>
-        <dl class="contact-list">
-          <div><dt><span class="zh">论文投稿咨询</span><span class="en" hidden>Paper submission</span></dt><dd><a href="tel:+8615101087525">15101087525</a>（王钰博）</dd></div>
-          <div><dt><span class="zh">电邮</span><span class="en" hidden>Email</span></dt><dd><a href="mailto:wcwpc@foxmail.com">wcwpc@foxmail.com</a>（大会）· <a href="mailto:adv@aivta.org">adv@aivta.org</a>（论文）</dd></div>
-          <div><dt><span class="zh">AIVTA会议官网</span><span class="en" hidden>Official site</span></dt><dd><a href="https://www.aivta.org" rel="noopener" target="_blank">www.aivta.org</a></dd></div>
-        </dl>
-      </div>
-
-      <div class="register-note">
-        <h3 class="sub-title"><span class="zh">报名回执</span><span class="en" hidden>Registration</span></h3>
-        <p><span class="zh">报名回执表需填写姓名、单位、职务、联系方式、参会身份（参展商 / 论文作者 / 评审专家 / 特邀嘉宾 / 其他）、是否需要展位、住宿方式、航班信息等。</span><span class="en" hidden>The registration form requires name, affiliation, position, contact, participation identity (exhibitor / paper author / review expert / invited guest / other), booth request, accommodation and flight details.</span></p>
-        <p><span class="zh">参赛报名、会议投稿或展位申请，请前往对应页面或致电、邮件联系组委会索取报名回执。</span><span class="en" hidden>To submit a work, paper or booth enquiry, visit the corresponding page, or contact the Committee by phone or email for the registration form.</span></p>
-        <p class="reg-cta">
-          <a class="btn btn-gold" href="submit.html"><span class="zh">前往报名参赛 ↗</span><span class="en" hidden>Go to Enter the Festival ↗</span></a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p class="footer-brand"><span class="zh">2026 AI国际影展 · 智绘未来，影动无界</span><span class="en" hidden>2026 AI International Film Festival · AI Changes Cinema, Youth Creates the Future</span></p>
-    <p class="footer-meta">
-      <span class="zh">合肥滨湖国际会展中心 · 2026.11.12—11.15</span>
-      <span class="en" hidden>Hefei Binhu Int'l Convention &amp; Exhibition Center · Nov 12–15, 2026</span>
-    </p>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-label"><span class="zh">参与</span><span class="en" hidden>Take part</span></p>
+        <a href="submit.html"><span class="zh">作品竞赛</span><span class="en" hidden>Competition</span></a>
+        <a href="conference.html"><span class="zh">学术会议</span><span class="en" hidden>Conference</span></a>
+        <a href="expo.html"><span class="zh">产业展览</span><span class="en" hidden>Exhibition</span></a>
+      </div>
+      <div>
+        <p class="footer-label"><span class="zh">组委会</span><span class="en" hidden>Committee</span></p>
+        <a href="mailto:wcwpc@foxmail.com">wcwpc@foxmail.com</a>
+        <a href="tel:+861061675616">+86 10 6167 5616</a>
+        <a href="tel:+8613910272918"><span class="zh">微信 / 电话 139 1027 2918</span><span class="en" hidden>WeChat / Tel 139 1027 2918</span></a>
+      </div>
+      <div>
+        <p class="footer-label"><span class="zh">论文咨询</span><span class="en" hidden>Paper enquiries</span></p>
+        <a href="mailto:adv@aivta.org">adv@aivta.org</a>
+        <a href="tel:+8615101087525">+86 151 0108 7525</a>
+        <a href="https://www.aivta.org" rel="noopener" target="_blank">aivta.org ↗</a>
+      </div>
+      <div>
+        <p class="footer-label"><span class="zh">时间地点</span><span class="en" hidden>When &amp; where</span></p>
+        <span><span class="zh">2026.11.12—11.15</span><span class="en" hidden>Nov 12–15, 2026</span></span>
+        <span><span class="zh">合肥滨湖国际会展中心</span><span class="en" hidden>Hefei Binhu Int'l Convention &amp; Exhibition Center</span></span>
+      </div>
+    </div>
+    <details class="footer-more">
+      <summary><span class="zh">查看其他地区联络电话</span><span class="en" hidden>More regional contacts</span></summary>
+      <div class="footer-phones">
+        <span><b><span class="zh">中国内地</span><span class="en" hidden>Mainland China</span></b> <a href="tel:+8613501006041">135 0100 6041</a> · <a href="tel:+8616710057519">167 1005 7519</a></span>
+        <span><b><span class="zh">中国香港</span><span class="en" hidden>Hong Kong</span></b> <a href="tel:+85257016042">+852 5701 6042</a></span>
+        <span><b><span class="zh">加拿大</span><span class="en" hidden>Canada</span></b> <a href="tel:+16043685548">+1 604 368 5548</a> · <a href="tel:+16046356035">604 635 6035</a> · <a href="tel:+16048025370">604 802 5370</a></span>
+        <span><b><span class="zh">美国</span><span class="en" hidden>USA</span></b> <a href="tel:+16462912938">+1 646 291 2938</a></span>
+      </div>
+    </details>
     <p class="footer-copy">© 2026 AI International Film Festival · <a href="https://aixff.org">www.aixff.org</a></p>
   </div>
 </footer>

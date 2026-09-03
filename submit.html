@@ -56,7 +56,7 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-title-zh="报名参赛 · 2026 AI国际影展" data-title-en="Enter the Festival · 2026 AI International Film Festival">
+<body data-page="competition" data-title-zh="报名参赛 · 2026 AI国际影展" data-title-en="Enter the Festival · 2026 AI International Film Festival">
 
 <!-- ============ 顶部导航 ============ -->
 <header class="nav" id="nav">
@@ -67,15 +67,10 @@
       <span class="brand-year">2026</span>
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="index.html#about" class="zh">关于</a><a href="index.html#about" class="en" hidden>About</a>
-      <a href="index.html#schedule" class="zh">日程</a><a href="index.html#schedule" class="en" hidden>Schedule</a>
-      <a href="index.html#org" class="zh">组织</a><a href="index.html#org" class="en" hidden>Organizers</a>
-      <a href="#awards" class="zh">奖项</a><a href="#awards" class="en" hidden>Awards</a>
-      <a href="#submit" class="zh active">参赛</a><a href="#submit" class="en active" hidden>Submit</a>
-      <a href="conference.html" class="zh">会议</a><a href="conference.html" class="en" hidden>Conference</a>
-      <a href="expo.html" class="zh">参展</a><a href="expo.html" class="en" hidden>Exhibit</a>
-      <a href="expo.html#fees" class="zh">费用</a><a href="expo.html#fees" class="en" hidden>Fees</a>
-      <a href="index.html#contact" class="zh">联系</a><a href="index.html#contact" class="en" hidden>Contact</a>
+      <a href="index.html" class="zh">首页</a><a href="index.html" class="en" hidden>Festival</a>
+      <a href="#submit" class="zh active" aria-current="page">作品竞赛</a><a href="#submit" class="en active" hidden aria-current="page">Competition</a>
+      <a href="conference.html" class="zh">学术会议</a><a href="conference.html" class="en" hidden>Conference</a>
+      <a href="expo.html" class="zh">产业展览</a><a href="expo.html" class="en" hidden>Exhibition</a>
     </nav>
     <div class="nav-actions">
       <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
@@ -91,8 +86,15 @@
 <!-- ============ 页头 ============ -->
 <section class="section" id="submit">
   <div class="wrap">
+    <p class="page-kicker"><span class="zh">参与路径 01 / 03</span><span class="en" hidden>Path 01 / 03</span></p>
     <h1 class="sec-title"><span class="zh">报名参赛</span><span class="en" hidden>Enter the Festival</span></h1>
     <p class="sub-title"><span class="zh">作品竞赛 58 项大奖 · 技术类奖项 20 项 · 从院线长片到 AI 微短剧，人人皆可“以AI造梦”</span><span class="en" hidden>58 competition awards · 20 technical awards · From features to micro-dramas, everyone can dream with AI</span></p>
+    <nav class="section-nav" aria-label="Page navigation">
+      <a href="#awards"><span class="zh">作品奖项</span><span class="en" hidden>Film Awards</span></a>
+      <a href="#requirements"><span class="zh">参赛要求</span><span class="en" hidden>Requirements</span></a>
+      <a href="#tech"><span class="zh">技术奖项</span><span class="en" hidden>Technical Awards</span></a>
+      <a href="#register"><span class="zh">报名投稿</span><span class="en" hidden>Register</span></a>
+    </nav>
   </div>
 </section>
 
@@ -361,11 +363,16 @@
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p class="footer-brand"><span class="zh">2026 AI国际影展 · 智绘未来，影动无界</span><span class="en" hidden>2026 AI International Film Festival · AI Changes Cinema, Youth Creates the Future</span></p>
-    <p class="footer-meta">
-      <span class="zh">合肥滨湖国际会展中心 · 2026.11.12—11.15</span>
-      <span class="en" hidden>Hefei Binhu Int'l Convention &amp; Exhibition Center · Nov 12–15, 2026</span>
-    </p>
+    <div class="footer-grid">
+      <div><p class="footer-label"><span class="zh">参与</span><span class="en" hidden>Take part</span></p><a href="submit.html"><span class="zh">作品竞赛</span><span class="en" hidden>Competition</span></a><a href="conference.html"><span class="zh">学术会议</span><span class="en" hidden>Conference</span></a><a href="expo.html"><span class="zh">产业展览</span><span class="en" hidden>Exhibition</span></a></div>
+      <div><p class="footer-label"><span class="zh">组委会</span><span class="en" hidden>Committee</span></p><a href="mailto:wcwpc@foxmail.com">wcwpc@foxmail.com</a><a href="tel:+861061675616">+86 10 6167 5616</a><a href="tel:+8613910272918"><span class="zh">微信 / 电话 139 1027 2918</span><span class="en" hidden>WeChat / Tel 139 1027 2918</span></a></div>
+      <div><p class="footer-label"><span class="zh">论文咨询</span><span class="en" hidden>Paper enquiries</span></p><a href="mailto:adv@aivta.org">adv@aivta.org</a><a href="tel:+8615101087525">+86 151 0108 7525</a><a href="https://www.aivta.org" rel="noopener" target="_blank">aivta.org ↗</a></div>
+      <div><p class="footer-label"><span class="zh">时间地点</span><span class="en" hidden>When &amp; where</span></p><span><span class="zh">2026.11.12—11.15</span><span class="en" hidden>Nov 12–15, 2026</span></span><span><span class="zh">合肥滨湖国际会展中心</span><span class="en" hidden>Hefei Binhu Int'l Convention &amp; Exhibition Center</span></span></div>
+    </div>
+    <details class="footer-more">
+      <summary><span class="zh">查看其他地区联络电话</span><span class="en" hidden>More regional contacts</span></summary>
+      <div class="footer-phones"><span><b><span class="zh">中国内地</span><span class="en" hidden>Mainland China</span></b> <a href="tel:+8613501006041">135 0100 6041</a> · <a href="tel:+8616710057519">167 1005 7519</a></span><span><b><span class="zh">中国香港</span><span class="en" hidden>Hong Kong</span></b> <a href="tel:+85257016042">+852 5701 6042</a></span><span><b><span class="zh">加拿大</span><span class="en" hidden>Canada</span></b> <a href="tel:+16043685548">+1 604 368 5548</a> · <a href="tel:+16046356035">604 635 6035</a> · <a href="tel:+16048025370">604 802 5370</a></span><span><b><span class="zh">美国</span><span class="en" hidden>USA</span></b> <a href="tel:+16462912938">+1 646 291 2938</a></span></div>
+    </details>
     <p class="footer-copy">© 2026 AI International Film Festival · <a href="https://aixff.org">www.aixff.org</a></p>
   </div>
 </footer>
