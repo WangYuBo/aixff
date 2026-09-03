@@ -9,7 +9,10 @@
 ## 目录结构
 
 ```
-├── index.html           # 单页全站（12 板块，中英双语）
+├── index.html           # 首页（Hero · 关于 · 日程 · 组织 · 会后周边 · 联系）
+├── submit.html          # 报名参赛（58 项作品竞赛 · 参赛要求 · 20 项技术奖 · 报名回执）
+├── conference.html      # 会议征稿（AIVTA 2026）
+├── expo.html            # 展位申请（展览招展 · 参会费用）
 ├── assets/
 │   ├── css/style.css    # 设计系统
 │   └── js/main.js       # 语言切换 / 导航

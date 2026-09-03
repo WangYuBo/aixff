@@ -15,9 +15,12 @@
     for (var j = 0; j < enEls.length; j++) enEls[j].hidden = !toEn;
     document.documentElement.lang = toEn ? "en" : "zh-CN";
     if (toggle) toggle.textContent = toEn ? "中文" : "EN";
-    document.title = toEn
-      ? "2026 AI International Film Festival"
-      : "2026 AI国际影展 · AI International Film Festival";
+    /* 每页 body 上的 data-title-zh / data-title-en 声明各自双语标题；缺省回退首页标题 */
+    var pageTitle = document.body.getAttribute(toEn ? "data-title-en" : "data-title-zh");
+    document.title = pageTitle
+      || (toEn
+        ? "2026 AI International Film Festival"
+        : "2026 AI国际影展 · AI International Film Festival");
     try { localStorage.setItem(STORE_KEY, lang); } catch (e) { /* private mode */ }
   }
 
